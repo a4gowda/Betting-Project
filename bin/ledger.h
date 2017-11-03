@@ -12,12 +12,13 @@ private:
     // TODO additional Ledger data members
 
 
-    std::vector<Contract> blockChain;
+    std::vector<ContractBlock> blockChain;
 
 public:
 
     Ledger(){ // TODO: default constructor, create genesis block
         blockChain.emplace_back(); // genesis block is contract?
+
     }
 
     // TODO create constructor with parameters based on data members of Contract
@@ -25,10 +26,12 @@ public:
 
     bool addContract(){ // TODO: need parameters for adding contract
         blockChain.emplace_back(); // append new contract block
+
     }
 
     std::string getGenesisTimeStamp(){
         return blockChain[0].getTimeStamp();
+
     }
 
 };

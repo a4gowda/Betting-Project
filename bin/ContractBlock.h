@@ -1,8 +1,7 @@
 #include "SettlementBlock.h"
 
 
-
-class Contract{
+class ContractBlock{
 
 private:
     // TODO create data members
@@ -10,7 +9,7 @@ private:
 
 
 public:
-    Contract(){ // TODO: default constructor
+    ContractBlock(){ // TODO: default constructor
         // get current date/time, stream data into oss, initialize timeStamp with data that was streamed into oss
         std::ostringstream oss;
         time_t t = time(0);

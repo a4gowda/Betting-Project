@@ -12,7 +12,7 @@ private:
     // TODO additional Ledger data members
 
 
-    std::vector<ContractBlock> blockChain;
+    std::vector<Block> blockChain;
 
 public:
 
